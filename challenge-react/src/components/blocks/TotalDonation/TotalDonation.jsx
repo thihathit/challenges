@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { TweenLite, Circ } from 'gsap';
 
+// Helpers
+import { formatNumber } from '../../../helpers.js';
+
 // Elements
 import Loader from '../../elements/Loader/Loader.jsx';
 
@@ -45,7 +48,7 @@ const TotalDonation = ({ loading = false, duration = 0.8 }) => {
         <Info>
           <NumberTitle>Total Donations</NumberTitle>
 
-          <Number>THB {currentNumber.toLocaleString('th-TH')}</Number>
+          <Number>THB {formatNumber(currentNumber)}</Number>
         </Info>
       )}
     </Container>

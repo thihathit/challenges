@@ -5,6 +5,9 @@ import toast from 'react-hot-toast';
 import Loader from '../../../elements/Loader/Loader.jsx';
 import Cross from '../../../elements/Cross/Cross.jsx';
 
+// Helpers
+import { formatNumber } from '../../../../helpers.js';
+
 // Api
 import { useDonations } from '../../../../hooks/api.js';
 
@@ -29,8 +32,6 @@ import {
 } from './CharityItem.styled.jsx';
 
 const toastOptions = {};
-
-const formatNumber = (num) => num.toLocaleString('th-TH');
 
 const CharityItem = ({
   id,
