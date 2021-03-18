@@ -1,6 +1,7 @@
 # Logs
 logs
 *.log
+*.local.js
 npm-debug.log*
 
 # Dependency directories

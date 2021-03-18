@@ -1,7 +1,7 @@
 const path = require('path');
 
 const config = {
-  entry: './src/index.js',
+  entry: './src/index.jsx',
   output: {
     publicPath: '/dist/',
     path: path.resolve(__dirname, 'dist'),
@@ -22,11 +22,15 @@ const config = {
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.(js|jsx)$/i,
         exclude: [/node_modules/],
         use: {
           loader: 'babel-loader',
         },
+      },
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
       },
     ],
   },
