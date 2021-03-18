@@ -3,7 +3,7 @@ import React from 'react';
 import { MainWrapper } from './Loader.styles.jsx';
 
 const defaultValues = {
-  color: '#000',
+  color: '#687186',
   active: true,
   fullPage: false,
   fullBgColor: 'rgba(255, 255, 255, 0.7)',
