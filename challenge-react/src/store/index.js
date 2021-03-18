@@ -1,24 +1,17 @@
 import { createStore } from 'redux';
 
 const initialState = {
-  notifications: null,
+  total_donations: 0,
 };
 
 const Reducer = (state = initialState, action = {}) => {
   const { type, value } = action;
 
   switch (type) {
-    case 'SET_NOTIFICATION': {
+    case 'UPDATE_TOTAL_DONATIONS': {
       return {
         ...state,
-        notifications: value,
-      };
-    }
-
-    case 'CLEAR_NOTIFICATION': {
-      return {
-        ...state,
-        notifications: initialState.notifications,
+        total_donations: value,
       };
     }
 
