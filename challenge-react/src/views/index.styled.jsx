@@ -42,3 +42,12 @@ export const Title = styled.h1`
     `;
   })}
 `;
+
+export const CopyrightText = styled.footer`
+  text-align: center;
+  color: #687186;
+  font-size: 0.75em;
+  font-weight: 500;
+
+  padding-top: 40px;
+`;

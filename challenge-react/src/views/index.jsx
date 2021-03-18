@@ -7,7 +7,7 @@ import CharityList from '../components/blocks/Charities/CharityList.jsx';
 import CharityItem from '../components/blocks/Charities/CharityItem/CharityItem.jsx';
 
 // Styles
-import { Container, Seperator, Title } from './index.styled.jsx';
+import { Container, Seperator, Title, CopyrightText } from './index.styled.jsx';
 
 // Api
 import { useDonations } from '../hooks/api.js';
@@ -61,6 +61,14 @@ const Index = () => {
           ))
         }
       </CharityList>
+
+      <CopyrightText>
+        &copy; {new Date().getFullYear()},{' '}
+        <a href="https://opn.ooo" target="_blank">
+          opn.ooo
+        </a>
+        . All Rights Reserved.
+      </CopyrightText>
     </Container>
   );
 };
