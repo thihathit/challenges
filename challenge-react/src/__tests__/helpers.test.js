@@ -1,7 +1,7 @@
-import { summaryDonations } from '../helpers';
+const { formatNumber } = require('../helpers.js');
 
 describe('helpers', function () {
-  test('`summaryDonations` should calculate donations correctly', function () {
-    expect(summaryDonations([1, 2, 3, 4])).toEqual(11);
+  test('test failed for `formatNumber`.', function () {
+    expect(formatNumber(1000)).toEqual('1,000');
   });
 });
